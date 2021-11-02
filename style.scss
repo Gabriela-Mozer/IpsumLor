@@ -28,11 +28,13 @@ $backgroundWhite: #f7ede2;
     align-self: center;
     justify-content: center;
     // width:50px;
+   
     &__logo{
         font-weight: 500;
         font-size:35px;
         color: $darkYellow;
         line-height: 28px;
+         margin-top: 30px;
 
     }
 }
@@ -43,9 +45,9 @@ $backgroundWhite: #f7ede2;
     // width: 100%;
     align-self: center;
     justify-items: center;
-    justify-content: center;
     text-decoration: none;
     margin-right: 27px;
+    
     &__item{
         align-self: center;
         padding : 30px;
@@ -65,10 +67,9 @@ $backgroundWhite: #f7ede2;
   .header-list__login{
       display: flex;
       justify-self: center;
-      width:100%;
       justify-content: center;
       align-items: center;
-   
+      
   }
   .header-list__login::before{
     position: absolute;
@@ -89,11 +90,11 @@ $backgroundWhite: #f7ede2;
       color: $darkYellow;
       font-size: 22px;
       text-decoration: none;
-      left:10px
   }
   .header__login__btn--build{
       padding: 25px;
       background: $darkYellow;
+      font-size: 22px;
       border-radius: 19px;
       color:$darkBlue;
       text-decoration: none;
