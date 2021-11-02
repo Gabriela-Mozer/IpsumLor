@@ -39,11 +39,12 @@
 }
 
 .header-logo__logo {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 35px;
   color: #e0a340;
   line-height: 28px;
   margin-top: 30px;
+  letter-spacing: 0.05em;
 }
 
 .header-list {
