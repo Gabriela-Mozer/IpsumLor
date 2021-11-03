@@ -3,13 +3,15 @@ $lightBlue: #84a59d;
 $yellow: #f6bd60;
 $darkYellow: #e0a340;
 $backgroundWhite: #f7ede2;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,800&family=Rubik:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,800&family=Rubik:wght@300;400;500&display=swap");
 
 * {
   //   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
+.body {
+  background-color: $backgroundWhite;
+}
 .header {
   margin: 0;
   background-color: $darkBlue;
@@ -18,7 +20,7 @@ $backgroundWhite: #f7ede2;
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 800px;
+  height: 600px;
   text-decoration: none;
   align-items: center;
 }
@@ -37,7 +39,7 @@ $backgroundWhite: #f7ede2;
   flex-direction: column;
   text-align: center;
   // width: 100%;
-  padding:0;
+  padding: 0;
   align-self: center;
   justify-items: center;
   text-decoration: none;
@@ -48,7 +50,6 @@ $backgroundWhite: #f7ede2;
     // padding: 30px;
     list-style-type: none;
     padding-top: 30px;
-
   }
 }
 .header-list__link {
@@ -64,12 +65,11 @@ $backgroundWhite: #f7ede2;
   display: flex;
   justify-content: space-around;
   align-content: center;
-
 }
 .header-list__login::before {
   position: absolute;
   top: 20%;
-  content: '';
+  content: "";
   border-bottom: 1.5px solid $darkYellow;
   // width: 350px;
   width: 100%;
@@ -77,7 +77,7 @@ $backgroundWhite: #f7ede2;
 .header-list__login::after {
   position: absolute;
   top: 80%;
-  content: '';
+  content: "";
   border-bottom: 1.5px solid $darkYellow;
   width: 100%;
 }
@@ -95,4 +95,43 @@ $backgroundWhite: #f7ede2;
   border-radius: 19px;
   color: $darkBlue;
   text-decoration: none;
+}
+
+.great {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  &__headline {
+    padding: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    color: $darkYellow;
+    letter-spacing: 0.13em;
+  }
+  &__underline{
+    display:none;
+    // visibility: hidden;
+  }
+  &__check{
+    display:none;
+    // visibility: hidden;
+  }
+}
+.text{
+  display: flex;
+  background-image: url(../imgsSmall/diamond.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 45% ;
+  align-self: center;
+  justify-content: center;
+  &__article{
+  align-self: center;
+   width: 85%;
+   font-weight: 600;
+   color:$darkBlue;
+   text-indent: 125px;
+   line-height: 1.5em;
+  }
 }
