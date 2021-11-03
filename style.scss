@@ -64,40 +64,47 @@ $backgroundWhite: #f7ede2;
   }
 
   .header-list__login{
+      position: relative;
       display: flex;
-      justify-self: stretch;
-      justify-content: center;
-      align-items: center;
+      align-self: center;
+      justify-content:space-between;
+      align-items:center;
       padding-bottom: 50px;
+      flex-direction: row;
   }
   .header-list__login::before{
     position: absolute;
-    top: 350px;
+    top: 20px;
     content: '';
     border-bottom: 1.5px solid $darkYellow;
-    width: 350px;
+    // width: 350px;
+    width:100%;
+    align-self: center;
   }
   .header-list__login::after{
     position: absolute;
-    top: 465px;
+    top: 175px;
     content: '';
     border-bottom: 1.5px solid $darkYellow;
-    width: 350px;
+    width: 100%;
+    align-self: center;
     
   }
   .header__login__btn--normal{
-      padding: 35px;
+     
       color: $darkYellow;
       font-size: 22px;
       text-decoration: none;
-      
+      align-self: center;
+      padding:100px;
   }
   .header__login__btn--build{
+      position: relative;
       padding: 25px;
       background: $darkYellow;
       font-size: 22px;
       border-radius: 19px;
       color:$darkBlue;
       text-decoration: none;
-      
+
   }
