@@ -17,7 +17,7 @@ $backgroundWhite: #f7ede2;
   display: flex;
 //   align-content: center;
 //   align-self: center;
-  height: 500px;
+//   height: 500px;
   flex-direction: column;
   text-align: center;
   text-decoration: none;
@@ -68,7 +68,7 @@ $backgroundWhite: #f7ede2;
       justify-self: stretch;
       justify-content: center;
       align-items: center;
-      
+      padding-bottom: 50px;
   }
   .header-list__login::before{
     position: absolute;
@@ -83,12 +83,14 @@ $backgroundWhite: #f7ede2;
     content: '';
     border-bottom: 1.5px solid $darkYellow;
     width: 350px;
+    
   }
   .header__login__btn--normal{
       padding: 35px;
       color: $darkYellow;
       font-size: 22px;
       text-decoration: none;
+      
   }
   .header__login__btn--build{
       padding: 25px;
@@ -97,4 +99,5 @@ $backgroundWhite: #f7ede2;
       border-radius: 19px;
       color:$darkBlue;
       text-decoration: none;
+      
   }
