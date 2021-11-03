@@ -15,9 +15,8 @@ $backgroundWhite: #f7ede2;
   clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
   padding: 0.5em 0 5em 0;
   display: flex;
-  align-content: center;
-  align-self: center;
-  width: 100%;
+//   align-content: center;
+//   align-self: center;
   height: 500px;
   flex-direction: column;
   text-align: center;
@@ -36,7 +35,6 @@ $backgroundWhite: #f7ede2;
         line-height: 28px;
          margin-top: 30px;
          letter-spacing: 0.05em;
-
     }
 }
 .header-list{
@@ -57,8 +55,8 @@ $backgroundWhite: #f7ede2;
     }
 }
 .header-list__link {
-    text-align: center;
-    align-self: center;
+    // text-align: center;
+    // align-self: center;
     text-decoration: none;
     color: #f7ede2;
     font-size: 18px;
@@ -67,7 +65,7 @@ $backgroundWhite: #f7ede2;
 
   .header-list__login{
       display: flex;
-      justify-self: center;
+      justify-self: stretch;
       justify-content: center;
       align-items: center;
       
