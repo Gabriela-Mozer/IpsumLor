@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,800&family=Rubik:wght@300;400;500&display=swap");
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -12,17 +12,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 800px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  height: 800px;
   text-decoration: none;
-}
-
-.header-logo {
-  border: 2px solid orange;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-logo__logo {
@@ -43,19 +42,19 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  padding: 0;
   -ms-flex-item-align: center;
       align-self: center;
   justify-items: center;
   text-decoration: none;
-  border: 2px solid red;
 }
 
 .header-list__item {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 30px;
   list-style-type: none;
+  padding-top: 30px;
 }
 
 .header-list__link {
@@ -75,13 +74,12 @@
       justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding-bottom: 70px;
 }
 
 .header-list__login::before {
   position: absolute;
   top: 20%;
-  content: "";
+  content: '';
   border-bottom: 1.5px solid #e0a340;
   width: 100%;
 }
@@ -89,13 +87,12 @@
 .header-list__login::after {
   position: absolute;
   top: 80%;
-  content: "";
+  content: '';
   border-bottom: 1.5px solid #e0a340;
   width: 100%;
 }
 
 .header__login__btn--normal {
-  border: 2px solid pink;
   color: #e0a340;
   font-size: 22px;
   text-decoration: none;
@@ -105,7 +102,6 @@
 }
 
 .header__login__btn--build {
-  border: 2px solid pink;
   padding: 25px;
   background: #e0a340;
   font-size: 22px;
@@ -113,4 +109,4 @@
   color: #598278;
   text-decoration: none;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=acess.css.map */
