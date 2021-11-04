@@ -166,5 +166,50 @@
   text-indent: 105px;
   line-height: 1.5em;
   letter-spacing: 0.09em;
+  padding-bottom: 50px;
+}
+
+.offers {
+  margin: 0;
+  padding: 10em 0 10em 0;
+  -webkit-clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 81%);
+          clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 81%);
+  background-color: #f6bd60;
+}
+
+.offers__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offers__container--heading {
+  color: #598278;
+  padding-top: 35px;
+}
+
+.offers__container--paragraph {
+  color: #598278;
+  font-weight: 600;
+  text-align: center;
+  width: 35%;
+  padding-bottom: 20px;
+}
+
+.offers__container--price {
+  background: #598278;
+  padding: 18px;
+  width: 50%;
+  border-radius: 22px;
+  border: none;
+  color: #f7ede2;
+  font-weight: 700;
 }
 /*# sourceMappingURL=acess.css.map */
