@@ -132,7 +132,8 @@ $backgroundWhite: #f7ede2;
     width: 85%;
     font-weight: 600;
     color: $darkBlue;
-    text-indent: 105px;
+    text-indent: 15px;
+    text-align: center;
     line-height: 1.5em;
     letter-spacing: 0.09em;
     padding-bottom: 50px;
@@ -142,13 +143,16 @@ $backgroundWhite: #f7ede2;
 //Offers
 .offers {
   margin: 0;
-  padding: 10em 0 10em 0;
+  padding: 13em 0 13em 0;
   clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 81%);
   background-color: $yellow;
+  
   &__container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    //  border: 1px solid #598278;
+    // border-spacing:10px; 
     &--heading{
       color:$darkBlue;
       padding-top: 35px;
@@ -159,10 +163,11 @@ $backgroundWhite: #f7ede2;
       text-align: center;
       width: 35%;
       padding-bottom: 20px;
+      font-size: 20px;
     }
     &--price{
       background: $darkBlue;
-      padding: 18px;
+      padding: 20px;
       width: 50%;
       border-radius:22px;
       border: none;
