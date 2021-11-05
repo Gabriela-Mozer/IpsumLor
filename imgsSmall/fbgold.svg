@@ -1,3 +1,59 @@
-<svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3186 4.29363C10.6346 4.15838 9.71084 4.05735 9.12986 4.05735C7.55672 4.05735 7.45453 4.73357 7.45453 5.81553V7.74157H11.387L11.0442 11.7313H7.45453V23.8667H2.53071V11.7313H0L0 7.74157H2.53071V5.27375C2.53071 1.89343 4.13766 0 8.17231 0C9.57406 0 10.6 0.202868 11.9334 0.473358L11.3186 4.29363Z" fill="#E0A340"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="31.933001"
+   height="60.450001"
+   viewBox="0 0 31.933001 60.450001"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="fbgold.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="7.5988107"
+     inkscape:cx="-33.59997"
+     inkscape:cy="31.974572"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 30.287836,10.874982 c -1.830339,-0.342564 -4.302262,-0.598454 -5.856926,-0.598454 -4.20962,0 -4.483074,1.712742 -4.483074,4.453149 v 4.878308 H 30.470868 L 29.553559,29.713244 H 19.947836 V 60.45 H 6.772015 V 29.713244 H 0 V 19.607985 H 6.772015 V 13.357447 C 6.772015,4.795713 11.072108,0 21.868569,0 25.61956,0 28.364909,0.51382766 31.933,1.1989295 Z"
+     fill="#e0a340"
+     id="path2"
+     style="stroke-width:2.6034" />
 </svg>
