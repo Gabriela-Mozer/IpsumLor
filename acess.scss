@@ -3,193 +3,217 @@ $lightBlue: #84a59d;
 $yellow: #f6bd60;
 $darkYellow: #e0a340;
 $backgroundWhite: #f7ede2;
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,800&family=Rubik:wght@300;400;500&display=swap");
+
 //Header
 * {
   //   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.body {
-  background-color: $backgroundWhite;
-}
-.header {
-  margin: 0;
-  background-color: $darkBlue;
-  clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
-  padding: 0.5em 0 5em 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 600px;
-  text-decoration: none;
-  align-items: center;
-}
-.header-logo {
-  &__logo {
-    font-weight: 600;
-    font-size: 35px;
-    color: $darkYellow;
-    line-height: 28px;
-    margin-top: 30px;
-    letter-spacing: 0.05em;
+@media (max-width: 840px) {
+  .body {
+    background-color: $backgroundWhite;
   }
-}
-.header-list {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  // width: 100%;
-  padding: 0;
-  align-self: center;
-  justify-items: center;
-  text-decoration: none;
-  //   margin-right: 27px;
-
-  &__item {
-    align-self: center;
-    // padding: 30px;
-    list-style-type: none;
-    padding-top: 30px;
-  }
-}
-.header-list__link {
-  text-decoration: none;
-  color: #f7ede2;
-  font-size: 18px;
-}
-
-.header-list__login {
-  width: 60%;
-  padding: 4em 0;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-}
-.header-list__login::before {
-  position: absolute;
-  top: 20%;
-  content: "";
-  border-bottom: 1.5px solid $darkYellow;
-  // width: 350px;
-  width: 100%;
-}
-.header-list__login::after {
-  position: absolute;
-  top: 80%;
-  content: "";
-  border-bottom: 1.5px solid $darkYellow;
-  width: 100%;
-}
-.header__login__btn--normal {
-  color: $darkYellow;
-  font-size: 22px;
-  text-decoration: none;
-  align-self: center;
-  //   padding: 100px;
-}
-.header__login__btn--build {
-  padding: 25px;
-  background: $darkYellow;
-  font-size: 22px;
-  border-radius: 19px;
-  color: $darkBlue;
-  text-decoration: none;
-}
-
-//Main
-.great {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  &__headline {
-    padding: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    color: $darkYellow;
-    letter-spacing: 0.13em;
-  }
-  &__underline {
-    display: none;
-    // visibility: hidden;
-  }
-  &__check {
-    display: none;
-    // visibility: hidden;
-  }
-}
-.text {
-  display: flex;
-  background-image: url(../imgsSmall/golddiamond.svg);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 45%;
-  align-self: center;
-  justify-content: center;
-  &__article {
-    align-self: center;
-    width: 85%;
-    font-weight: 600;
-    color: $darkBlue;
-    text-indent: 15px;
-    text-align: center;
-    line-height: 1.5em;
-    letter-spacing: 0.09em;
-    padding-bottom: 50px;
-  }
-}
-
-//Offers
-.offers {
-  margin: 0;
-  padding: 13em 0 13em 0;
-  clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 81%);
-  background-color: $yellow;
-  
-  &__container{
+  .header {
+    margin: 0;
+    background-color: $darkBlue;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+    padding: 0.5em 0 5em 0;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    height: 600px;
+    text-decoration: none;
     align-items: center;
-    //  border: 1px solid #598278;
-    // border-spacing:10px; 
-    &--heading{
-      color:$darkBlue;
-      padding-top: 35px;
-    }
-    &--paragraph{
-      color:$darkBlue;
+  }
+  .header-logo {
+    &__logo {
       font-weight: 600;
-      text-align: center;
-      width: 35%;
-      padding-bottom: 20px;
-      font-size: 20px;
+      font-size: 35px;
+      color: $darkYellow;
+      line-height: 28px;
+      margin-top: 30px;
+      letter-spacing: 0.05em;
     }
-    &--price{
-      background: $darkBlue;
+  }
+  .header-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // width: 100%;
+    padding: 0;
+    align-self: center;
+    justify-items: center;
+    text-decoration: none;
+    //   margin-right: 27px;
+
+    &__item {
+      align-self: center;
+      // padding: 30px;
+      list-style-type: none;
+      padding-top: 30px;
+    }
+  }
+  .header-list__link {
+    text-decoration: none;
+    color: #f7ede2;
+    font-size: 18px;
+  }
+
+  .header-list__login {
+    width: 60%;
+    padding: 4em 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .header-list__login::before {
+    position: absolute;
+    top: 20%;
+    content: "";
+    border-bottom: 1.5px solid $darkYellow;
+    // width: 350px;
+    width: 100%;
+  }
+  .header-list__login::after {
+    position: absolute;
+    top: 80%;
+    content: "";
+    border-bottom: 1.5px solid $darkYellow;
+    width: 100%;
+  }
+  .header__login__btn--normal {
+    color: $darkYellow;
+    font-size: 22px;
+    text-decoration: none;
+    align-self: center;
+    //   padding: 100px;
+  }
+  .header__login__btn--build {
+    padding: 25px;
+    background: $darkYellow;
+    font-size: 22px;
+    border-radius: 19px;
+    color: $darkBlue;
+    text-decoration: none;
+  }
+
+  //Main
+  .great {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    &__headline {
       padding: 20px;
-      width: 50%;
-      border-radius:22px;
-      border: none;
-      color: $backgroundWhite;
-      font-weight: 700;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 38px;
+      color: $darkYellow;
+      letter-spacing: 0.13em;
+    }
+    &__underline {
+      display: none;
+      // visibility: hidden;
+    }
+    &__check {
+      display: none;
+      // visibility: hidden;
+    }
+  }
+  .text {
+    display: flex;
+    background-image: url(../imgsSmall/golddiamond.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 45%;
+    align-self: center;
+    justify-content: center;
+    &__article {
+      align-self: center;
+      width: 85%;
+      font-weight: 600;
+      color: $darkBlue;
+      text-indent: 15px;
+      text-align: center;
+      line-height: 1.5em;
+      letter-spacing: 0.09em;
+      padding-bottom: 50px;
     }
   }
 
+  //Offers
+  .offers {
+    margin: 0;
+    padding: 13em 0 13em 0;
+    clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 81%);
+    background-color: $yellow;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //  border: 1px solid #598278;
+      // border-spacing:10px;
+      &--heading {
+        color: $darkBlue;
+        padding-top: 35px;
+      }
+      &--headingFirst {
+        color: $darkBlue;
+        padding-top: 35px;
+      }
+
+      &--paragraph {
+        color: $darkBlue;
+        font-weight: 600;
+        text-align: center;
+        width: 35%;
+        padding-bottom: 20px;
+        font-size: 20px;
+      }
+      &--price {
+        background: $darkBlue;
+        padding: 20px;
+        width: 50%;
+        border-radius: 22px;
+        border: none;
+        color: $backgroundWhite;
+        font-weight: 700;
+      }
+    }
+  }
+
+  //Footer
+  .media {
+    padding: 25px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    &__semi {
+      padding-bottom: 35px;
+      align-self: center;
+    }
+    &__socials {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0;
+    }
+  }
 }
-//Footer
-.media{
- padding: 25px 0;
- display: flex;
- flex-flow: column;
- justify-content: space-around;
- &__semi{
-   padding-bottom: 35px;
-   align-self: center;
- }
- &__socials{
-  display: flex;
-  justify-content: space-around;
-  padding: 20px 0;
- }
+
+@media (min-width: 840px) {
+  body {
+    background-color: $backgroundWhite;
+  }
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
+  .header-list {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
