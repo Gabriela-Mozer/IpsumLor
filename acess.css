@@ -346,5 +346,31 @@
     border-radius: 20px;
     border: none;
   }
+  .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin-top: 15%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background-size: 50%;
+    background-color: #84a59d;
+    -webkit-clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 75%);
+            clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 75%);
+    padding: 15em 0 15em 0;
+  }
+  .text__article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    padding: 0 12em 0 12em;
+    line-height: 1.8em;
+    font-weight: 500;
+  }
 }
 /*# sourceMappingURL=acess.css.map */
