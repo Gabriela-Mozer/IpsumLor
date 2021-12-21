@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,800&family=Rubik:wght@300;400;500&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 840px) {
+  .body {
+    background-color: #f7ede2;
+  }
+
+  .header {
+    margin: 0;
+    background-color: #598278;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+    padding: 0.5em 0 5em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 600px;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .header-logo__logo {
+    font-weight: 600;
+    font-size: 35px;
+    color: #e0a340;
+    line-height: 28px;
+    margin-top: 30px;
+    letter-spacing: 0.05em;
+  }
+
+  .header-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    align-self: center;
+    justify-items: center;
+    text-decoration: none;
+  }
+  .header-list__item {
+    align-self: center;
+    list-style-type: none;
+    padding-top: 30px;
+  }
+
+  .header-list__link {
+    text-decoration: none;
+    color: #f7ede2;
+    font-size: 18px;
+  }
+
+  .header-list__login {
+    width: 60%;
+    padding: 4em 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .header-list__login::before {
+    position: absolute;
+    top: 20%;
+    content: "";
+    border-bottom: 1.5px solid #e0a340;
+    width: 100%;
+  }
+
+  .header-list__login::after {
+    position: absolute;
+    top: 80%;
+    content: "";
+    border-bottom: 1.5px solid #e0a340;
+    width: 100%;
+  }
+
+  .header__login__btn--normal {
+    color: #e0a340;
+    font-size: 22px;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  .header__login__btn--build {
+    padding: 25px;
+    background: #e0a340;
+    font-size: 22px;
+    border-radius: 19px;
+    color: #598278;
+    text-decoration: none;
+  }
+
+  .great {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .great__headline {
+    padding: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    color: #e0a340;
+    letter-spacing: 0.13em;
+  }
+  .great__underline {
+    display: none;
+  }
+  .great__check {
+    display: none;
+  }
+
+  .text {
+    display: flex;
+    background-image: url(../imgsSmall/golddiamond.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 45%;
+    align-self: center;
+    justify-content: center;
+  }
+  .text__article {
+    align-self: center;
+    width: 85%;
+    font-weight: 600;
+    color: #598278;
+    text-indent: 15px;
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: 0.09em;
+    padding-bottom: 50px;
+  }
+
+  .offers {
+    margin: 0;
+    padding: 13em 0 13em 0;
+    clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 81%);
+    background-color: #f6bd60;
+  }
+  .offers__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .offers__container--heading {
+    color: #598278;
+    padding-top: 35px;
+  }
+  .offers__container--headingFirst {
+    color: #598278;
+    padding-top: 35px;
+  }
+  .offers__container--paragraph {
+    color: #598278;
+    font-weight: 600;
+    text-align: center;
+    width: 35%;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  .offers__container--price {
+    background: #598278;
+    padding: 20px;
+    width: 50%;
+    border-radius: 22px;
+    border: none;
+    color: #f7ede2;
+    font-weight: 700;
+  }
+
+  .media {
+    padding: 25px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+  .media__semi {
+    padding-bottom: 35px;
+    align-self: center;
+  }
+  .media__socials {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+}
+@media (min-width: 840px) {
+  body {
+    background-color: #f7ede2;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header-list {
+    padding-left: 30px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
