@@ -263,7 +263,7 @@ $backgroundWhite: #f7ede2;
   }
   .header::after{
     position: absolute;
-    top: 25%;
+    top: 15%;
     content: "";
     border-bottom: 1.5px solid $darkYellow;
     width: 93%;
@@ -361,10 +361,22 @@ $backgroundWhite: #f7ede2;
         outline: none;
         border:none;
         cursor: pointer;
+        
       }
     }
   }
-  
+  .media{
+    display: flex;
+    padding: 15em 0 15em 0;
+    background: $yellow;
+    clip-path: polygon(0 57%, 100% 34%, 100% 100%, 0% 100%);
+    &__socials{
+      display :none;
+    }
+    &__socials::after{
+      background-image: url('imgs/yt.svg');
+    }
+  }
 }
 
 

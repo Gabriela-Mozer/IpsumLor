@@ -296,7 +296,7 @@
   }
   .header::after {
     position: absolute;
-    top: 25%;
+    top: 15%;
     content: "";
     border-bottom: 1.5px solid #e0a340;
     width: 93%;
@@ -407,6 +407,21 @@
     outline: none;
     border: none;
     cursor: pointer;
+  }
+  .media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15em 0 15em 0;
+    background: #f6bd60;
+    -webkit-clip-path: polygon(0 57%, 100% 34%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 57%, 100% 34%, 100% 100%, 0% 100%);
+  }
+  .media__socials {
+    display: none;
+  }
+  .media__socials::after {
+    background-image: url("imgs/yt.svg");
   }
 }
 /*# sourceMappingURL=acess.css.map */
