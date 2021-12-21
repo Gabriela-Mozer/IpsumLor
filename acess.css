@@ -296,7 +296,7 @@
   }
   .header::after {
     position: absolute;
-    top: 15%;
+    top: 25%;
     content: "";
     border-bottom: 1.5px solid #e0a340;
     width: 93%;
