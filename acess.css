@@ -345,6 +345,7 @@
     font-weight: 600;
     border-radius: 20px;
     border: none;
+    cursor: pointer;
   }
   .text {
     display: -webkit-box;
@@ -371,6 +372,41 @@
     padding: 0 12em 0 12em;
     line-height: 1.8em;
     font-weight: 500;
+    margin: 12px;
+  }
+  .offers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .offers__container {
+    text-align: center;
+    padding: 25px;
+    line-height: 30px;
+    letter-spacing: 0.165em;
+    color: #302E2E;
+  }
+  .offers__container--paragraph {
+    border: 1.5px solid #84a59d;
+    padding: 40px;
+  }
+  .offers__container--heading {
+    color: #598278;
+  }
+  .offers__container--headingFirst {
+    color: #598278;
+  }
+  .offers__container--price {
+    color: #fff;
+    background: #598278;
+    border-radius: 20px;
+    padding: 20px;
+    width: 40%;
+    outline: none;
+    border: none;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=acess.css.map */

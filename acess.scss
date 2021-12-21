@@ -307,6 +307,7 @@ $backgroundWhite: #f7ede2;
     font-weight: 600;
     border-radius: 20px;
     border:none;
+    cursor: pointer;
 
   }
   .text{
@@ -318,9 +319,7 @@ $backgroundWhite: #f7ede2;
     background-color: $lightBlue;
     clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 75%);
     padding: 15em 0 15em 0;
-
-  }
-  .text__article{
+    &__article{
     display: flex;
     // width:50%;
     color: #fff;
@@ -329,7 +328,43 @@ $backgroundWhite: #f7ede2;
     padding: 0 12em 0 12em;
     line-height: 1.8em;
     font-weight: 500;
+    margin:12px; 
+    }
   }
+  .offers{
+    padding-top:100px;
+    padding-bottom: 100px;
+    display: flex;
+    &__container{
+      text-align: center;
+      padding: 25px;
+      line-height: 30px;
+      letter-spacing: 0.165em;
+      color:#302E2E;
+      //border:1px solid;
+      &--paragraph{
+        border:1.5px solid $lightBlue;
+        padding: 40px;
+      }
+      &--heading{
+        color:$darkBlue;
+      }
+      &--headingFirst{
+        color:$darkBlue;
+      }
+      &--price{
+        color:#fff;
+        background: $darkBlue;
+        border-radius: 20px;
+        padding:20px;
+        width: 40%;
+        outline: none;
+        border:none;
+        cursor: pointer;
+      }
+    }
+  }
+  
 }
 
 
