@@ -9,6 +9,7 @@ $backgroundWhite: #f7ede2;
 //Header
 * {
   //   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
 @media (max-width: 840px) {
@@ -305,7 +306,7 @@ $backgroundWhite: #f7ede2;
     width: 20%;
     padding: 14px;
     position: relative;
-    left: 17%;
+    left: 16%;
     background-color: $yellow;
     color: $darkBlue;
     font-weight: 600;
@@ -504,6 +505,89 @@ $backgroundWhite: #f7ede2;
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    }
+  }
+  
+  .text{
+    display: flex;
+    position: relative;
+    //margin-top: %;
+    align-content: center;
+    background-size: 50%;
+    background-color: $lightBlue;
+    clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 75%);
+    padding: 25em 0 25em 0;
+    //height: 80em;
+    &__article {
+      display: flex;
+      font-size: 25px;
+      color: #fff;
+      align-content: center;
+      text-align: center;
+      padding: 0 12em 0 12em;
+      line-height: 2em;
+      font-weight: 500;
+      margin: 12px;
+    }
+  }
+  .offers {
+    //padding-top: 120px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    display: flex;
+    &__container {
+      text-align: center;
+      padding: 90px 90px;
+      line-height: 50px;
+      letter-spacing: 0.2em;
+      color: #302e2e;
+      //border:1px solid;
+      &--paragraph {
+        border: 1.5px solid $lightBlue;
+        padding: 90px;
+      }
+      &--heading {
+        color: $darkBlue;
+      }
+      &--headingFirst {
+        color: $darkBlue;
+      }
+      &--price {
+        color: #fff;
+        background: $darkBlue;
+        border-radius: 20px;
+        padding: 20px;
+        width: 40%;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .media {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    height: 80vh;
+    //padding: 15em 0 15em 0;
+    background: $yellow;
+    clip-path: polygon(0 57%, 100% 34%, 100% 100%, 0% 100%);
+    &__socials {
+      display: none;
+    }
+    &__big {
+      position: relative;
+      top: 24%;
+      display: flex;
+      width: 67%;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    &__semi {
+      position: relative;
+      top: 89px;
+      font-size: 25px;
     }
   }
 }

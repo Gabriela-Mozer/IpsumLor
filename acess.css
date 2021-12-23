@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,800&family=Rubik:wght@300;400;500&display=swap");
 * {
+  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
 
@@ -343,7 +344,7 @@
     width: 20%;
     padding: 14px;
     position: relative;
-    left: 17%;
+    left: 16%;
     background-color: #f6bd60;
     color: #598278;
     font-weight: 600;
@@ -577,6 +578,106 @@
     border-radius: 20px;
     border: none;
     cursor: pointer;
+  }
+  .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background-size: 50%;
+    background-color: #84a59d;
+    -webkit-clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 75%);
+            clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 75%);
+    padding: 25em 0 25em 0;
+  }
+  .text__article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 25px;
+    color: #fff;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    padding: 0 12em 0 12em;
+    line-height: 2em;
+    font-weight: 500;
+    margin: 12px;
+  }
+  .offers {
+    margin-top: 40px;
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .offers__container {
+    text-align: center;
+    padding: 90px 90px;
+    line-height: 50px;
+    letter-spacing: 0.2em;
+    color: #302e2e;
+  }
+  .offers__container--paragraph {
+    border: 1.5px solid #84a59d;
+    padding: 90px;
+  }
+  .offers__container--heading {
+    color: #598278;
+  }
+  .offers__container--headingFirst {
+    color: #598278;
+  }
+  .offers__container--price {
+    color: #fff;
+    background: #598278;
+    border-radius: 20px;
+    padding: 20px;
+    width: 40%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 80vh;
+    background: #f6bd60;
+    -webkit-clip-path: polygon(0 57%, 100% 34%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 57%, 100% 34%, 100% 100%, 0% 100%);
+  }
+  .media__socials {
+    display: none;
+  }
+  .media__big {
+    position: relative;
+    top: 24%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 67%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+  }
+  .media__semi {
+    position: relative;
+    top: 89px;
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=acess.css.map */
