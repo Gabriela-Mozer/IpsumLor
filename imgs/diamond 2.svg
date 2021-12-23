@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="367.577"
+   height="253.839"
+   viewBox="0 0 367.577 253.839"
+   fill="none"
+   version="1.1"
+   id="svg37"
+   sodipodi:docname="diamond 2.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata41">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview39"
+     showgrid="false"
+     inkscape:zoom="0.77275436"
+     inkscape:cx="296.96132"
+     inkscape:cy="169.55153"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg37"
+     inkscape:document-rotation="0" />
+  <g
+     id="g50"
+     transform="matrix(1.1810841,0,0,1.11171,5.4115147,0.80358732)">
+    <path
+       d="M 67.622892,4.466677 69.300924,26.423395 118.916,4.980563 155.33246,24.555346 191.29632,5.2826917 236.56666,28.88294 235.63253,4.466677 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path4" />
+    <path
+       d="M 67.620295,70.706107 1.3444047,70.706849 69.300924,26.425101 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path6" />
+    <path
+       d="m 1.3444047,70.706849 v 5.948346 l 300.5665053,-0.0037 v -5.948346 z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path8" />
+    <path
+       d="M 151.16557,227.98075 185.32052,76.469703 107.52533,76.3176 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path10" />
+    <path
+       d="M 69.300924,26.425176 1.3444047,70.706849 67.344135,4.7377173 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path12" />
+    <path
+       d="M 235.91076,4.3906996 301.91165,70.703139 236.56666,28.884646 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path14" />
+    <path
+       d="M 118.91674,4.9821211 69.301146,26.425027 67.620666,70.705365 155.3332,24.556978 Z M 155.3332,24.556978 235.63253,70.703881 236.56666,28.884572 191.29632,5.284324 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path16" />
+    <path
+       d="M 155.33246,24.557052 67.620147,70.706107 235.63253,70.703881 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path18" />
+    <path
+       d="m 235.63253,70.703881 66.27838,-7.42e-4 -65.34499,-41.818567 z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path20" />
+    <path
+       d="M 1.3441005,76.655195 151.16557,227.98075 45.221365,76.785781 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path22" />
+    <path
+       d="M 151.16483,227.98075 107.52459,76.318342 45.221069,76.785039 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path24" />
+    <path
+       d="M 151.16483,227.98075 251.2665,76.785039 185.32052,76.469703 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path26" />
+    <path
+       d="M 151.16483,227.98075 301.91091,76.651485 251.2665,76.785781 Z"
+       stroke="#84a59d"
+       stroke-opacity="0.997685"
+       stroke-width="2.96787"
+       id="path28" />
+  </g>
+  <defs
+     id="defs35">
+    <clipPath
+       id="clip0_105:14">
+      <rect
+         width="519"
+         height="320"
+         fill="#ffffff"
+         id="rect32"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+</svg>

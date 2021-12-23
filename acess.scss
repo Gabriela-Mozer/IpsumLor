@@ -200,96 +200,100 @@ $backgroundWhite: #f7ede2;
       justify-content: space-around;
       padding: 20px 0;
     }
+    &__big {
+      display: none;
+    }
   }
 }
 
-@media (min-width: 841px) and (max-width:1445px) {
+@media (min-width: 841px) and (max-width: 1445px) {
   body {
     background-color: $backgroundWhite;
   }
   .header {
     display: flex;
+    //flex-direction: column;
     justify-content: space-around;
-    color:$darkBlue;
+    color: $darkBlue;
     text-decoration: none;
-    margin-top:12px;
+    margin-top: 12px;
     padding-top: 5px;
   }
-  .header-logo{
-    width:55%;
+  .header-logo {
+    width: 55%;
   }
   .header-list {
     position: absolute;
     padding-top: 10px;
     //top:10px;
-    left:20%;
+    left: 20%;
     width: 30%;
     display: flex;
     justify-content: space-between;
     list-style: none;
     color: $darkBlue;
-    &__link{
-    text-decoration: none;
-    color: $darkBlue;
-    font-weight:500 ;
+    &__link {
+      text-decoration: none;
+      color: $darkBlue;
+      font-weight: 500;
+    }
   }
-  }
-  .header-list__login{
-    position: relative;
+  .header-list__login {
+    //position: relative;
     display: flex;
     justify-content: space-between;
-    width:25%;
+    width: 25%;
     // padding-top: 27px;
     text-decoration: none;
     align-items: center;
-    
   }
-  .header__login__btn--normal{
+  .header__login__btn--normal {
     text-decoration: none;
-    color:$darkYellow;
+    color: $darkYellow;
     font-weight: 500;
-    padding:20px;
+    padding: 20px;
   }
-  .header__login__btn--build{
+  .header__login__btn--build {
     text-decoration: none;
     color: $backgroundWhite;
     background-color: $darkBlue;
     padding: 20px;
-    width:30%;
+    width: 30%;
     font-weight: 500;
     text-align: center;
     border: 2px solid $yellow;
     border-radius: 18px;
   }
-  .header::after{
+  .header::after {
     position: absolute;
-    top: 25%;
-    content: "";
     border-bottom: 1.5px solid $darkYellow;
+    content: "";
+    align-self: flex-end;
     width: 93%;
+    top: 14%;
   }
 
-  .great{
+  .great {
     padding-top: 12%;
-    margin:10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    column-gap: 0,5px;;
-    background-image: url('imgs/diamond\ 1.svg');
+    column-gap: 0, 5px;
+    background-image: url("imgs/diamond\ 1.svg");
     background-repeat: no-repeat;
     // background-position: right;
     background-position-x: 85%;
-    background-position-y:62% ;
-    &__headline{
+    background-position-y: 62%;
+    &__headline {
       width: 20%;
       letter-spacing: 0.13em;
       padding-left: 18%;
       line-height: 125%;
-      color:$darkYellow;
+      color: $darkYellow;
       font-size: 45px;
     }
   }
-  .great__underline{
+  .great__underline {
     padding-left: 17%;
     font-weight: 300;
     font-size: 24px;
@@ -297,152 +301,209 @@ $backgroundWhite: #f7ede2;
     text-decoration-line: underline;
     letter-spacing: 0.035em;
   }
-  .great__check{
+  .great__check {
     width: 20%;
-    padding:14px;
+    padding: 14px;
     position: relative;
     left: 17%;
     background-color: $yellow;
     color: $darkBlue;
     font-weight: 600;
     border-radius: 20px;
-    border:none;
+    border: none;
     cursor: pointer;
-
   }
-  .text{
+  .text {
     display: flex;
     position: relative;
     margin-top: 15%;
     align-content: center;
-    background-size:50%;
+    background-size: 50%;
     background-color: $lightBlue;
     clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 75%);
     padding: 15em 0 15em 0;
-    &__article{
-    display: flex;
-    // width:50%;
-    color: #fff;
-    align-content: center;
-    text-align: center;
-    padding: 0 12em 0 12em;
-    line-height: 1.8em;
-    font-weight: 500;
-    margin:12px; 
+    &__article {
+      display: flex;
+      // width:50%;
+      color: #fff;
+      align-content: center;
+      text-align: center;
+      padding: 0 12em 0 12em;
+      line-height: 1.8em;
+      font-weight: 500;
+      margin: 12px;
     }
   }
-  .offers{
-    padding-top:100px;
-    padding-bottom: 100px;
+  .offers {
+    padding-top: 120px;
+    margin-top: 50px;
+    padding-bottom: 10px;
     display: flex;
-    &__container{
+    &__container {
       text-align: center;
       padding: 25px;
       line-height: 30px;
       letter-spacing: 0.165em;
-      color:#302E2E;
+      color: #302e2e;
       //border:1px solid;
-      &--paragraph{
-        border:1.5px solid $lightBlue;
+      &--paragraph {
+        border: 1.5px solid $lightBlue;
         padding: 40px;
       }
-      &--heading{
-        color:$darkBlue;
+      &--heading {
+        color: $darkBlue;
       }
-      &--headingFirst{
-        color:$darkBlue;
+      &--headingFirst {
+        color: $darkBlue;
       }
-      &--price{
-        color:#fff;
+      &--price {
+        color: #fff;
         background: $darkBlue;
         border-radius: 20px;
-        padding:20px;
+        padding: 20px;
         width: 40%;
         outline: none;
-        border:none;
+        border: none;
         cursor: pointer;
-        
       }
     }
   }
-  .media{
+  .media {
     display: flex;
-    padding: 15em 0 15em 0;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    height: 100vh;
+    //padding: 15em 0 15em 0;
     background: $yellow;
     clip-path: polygon(0 57%, 100% 34%, 100% 100%, 0% 100%);
-    &__socials{
-      display :none;
+    &__socials {
+      display: none;
     }
-    &__socials::after{
-      background-image: url('imgs/yt.svg');
+
+    &__big {
+      position: relative;
+      top: 24%;
+      display: flex;
+      width: 67%;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    &__semi {
+      position: relative;
+      top: 89px;
+      font-size: 25px;
     }
   }
 }
 
-
-// @media(max-width:1800px){
-//   body {
-//     background-color: $backgroundWhite;
-//   }
-//   .header {
-//     display: flex;
-//     justify-content: space-around;
-//     color:$darkBlue;
-//     text-decoration: none;
-//     margin-top:12px;
-//     padding-top: 5px;
-//   }
-//   .header-logo{
-//     width:55%;
-//   }
-//   .header-list {
-//     position: absolute;
-//     padding-top: 10px;
-//     //top:10px;
-//     left:20%;
-//     width: 30%;
-//     display: flex;
-//     justify-content: space-between;
-//     list-style: none;
-//     color: $darkBlue;
-//     &__link{
-//     text-decoration: none;
-//     color: $darkBlue;
-//     font-weight:500 ;
-//   }
-//   }
-//   .header-list__login{
-//     position: relative;
-//     display: flex;
-//     justify-content: space-between;
-//     width:25%;
-//     // padding-top: 27px;
-//     text-decoration: none;
-//     align-items: center;
-    
-//   }
-//   .header__login__btn--normal{
-//     text-decoration: none;
-//     color:$darkYellow;
-//     font-weight: 500;
-//     padding:20px;
-//   }
-//   .header__login__btn--build{
-//     text-decoration: none;
-//     color: $backgroundWhite;
-//     background-color: $darkBlue;
-//     padding: 20px;
-//     width:30%;
-//     font-weight: 500;
-//     text-align: center;
-//     border: 2px solid $yellow;
-//     border-radius: 18px;
-//   }
-//   .header::after{
-//     position: absolute;
-//     top: 25%;
-//     content: "";
-//     border-bottom: 1.5px solid $darkYellow;
-//     width: 93%;
-//   }
-// }
+@media (min-width: 1446px) and(max-width:1900px) {
+  body {
+    background-color: $backgroundWhite;
+  }
+  .header {
+    display: flex;
+    justify-content: space-around;
+    color: $darkBlue;
+    text-decoration: none;
+    margin-top: 12px;
+    padding-top: 5px;
+  }
+  .header-logo {
+    width: 55%;
+  }
+  .header-list {
+    position: absolute;
+    padding-top: 10px;
+    //top:10px;
+    left: 20%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: $darkBlue;
+    &__link {
+      text-decoration: none;
+      color: $darkBlue;
+      font-weight: 500;
+    }
+  }
+  .header-list__login {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    // padding-top: 27px;
+    text-decoration: none;
+    align-items: center;
+  }
+  .header__login__btn--normal {
+    text-decoration: none;
+    color: $darkYellow;
+    font-weight: 500;
+    padding: 20px;
+  }
+  .header__login__btn--build {
+    text-decoration: none;
+    color: $backgroundWhite;
+    background-color: $darkBlue;
+    padding: 20px;
+    width: 30%;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid $yellow;
+    border-radius: 18px;
+  }
+  .header::after {
+    position: absolute;
+    border-bottom: 1.5px solid $darkYellow;
+    content: "";
+    align-self: flex-end;
+    width: 93%;
+    top: 14%;
+  }
+  .great {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    padding: 76px;
+    margin-top: 10%;
+    //column-gap: 5px;
+    background-image: url("imgs/diamond\ 2.svg");
+    background-repeat: no-repeat;
+    //align-self: center;
+    //align-content: center;
+    text-align: center;
+    background-position-x: 50%;
+    //background-position-y: 102%;
+    //background-size: contain;
+    &__headline {
+      color: $darkYellow;
+      font-size: 55px;
+      margin-bottom: 16px;
+      align-self: center;
+    }
+    &__underline {
+      font-weight: 400;
+      font-size: 24px;
+      color: $darkBlue;
+      text-decoration-line: underline;
+      letter-spacing: 0.035em;
+      margin-top:5%;
+    }
+    &__check{
+    width: 30%;
+    padding: 14px;
+    align-self: center;
+    margin-top:2%;
+     //position: relative;
+    //left: 17%;
+    background-color: $yellow;
+    color: $darkBlue;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    }
+  }
+}
