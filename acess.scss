@@ -103,13 +103,12 @@ $backgroundWhite: #f7ede2;
 
   //Main
   .great {
+   // opacity: 0;
+    //transform: translateX(-100px);
     display: flex;
     justify-content: center;
     padding: 0;
-    &__transitioned{
-      transform: translateX(0);
-      opacity: 1;
-    }
+  
     &__headline {
       padding: 20px;
       font-style: normal;
@@ -127,10 +126,17 @@ $backgroundWhite: #f7ede2;
       // visibility: hidden;
     }
   }
-  .great .transitioned{
-    transform: translateX(0);
-    opacity: 1;
-  }
+  // .great.show{
+  //  transform: translateX(-100px);
+  //   opacity: 0;
+  // }
+
+  // .great.lazy{
+  // transform: translateX(100px);
+  //   opacity: 1;
+  // }
+
+ 
   .text {
     display: flex;
     background-image: url(../imgsSmall/golddiamond.svg);
