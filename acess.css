@@ -106,6 +106,9 @@
     text-decoration: none;
   }
   .great {
+    opacity: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -113,6 +116,8 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0;
+    -webkit-transition: 150ms;
+    transition: 150ms;
   }
   .great__headline {
     padding: 20px;
@@ -127,6 +132,11 @@
   }
   .great__check {
     display: none;
+  }
+  .great.show {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+    opacity: 1;
   }
   .text {
     display: -webkit-box;

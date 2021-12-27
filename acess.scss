@@ -103,11 +103,12 @@ $backgroundWhite: #f7ede2;
 
   //Main
   .great {
-   // opacity: 0;
-    //transform: translateX(-100px);
+    opacity: 0;
+    transform: translateX(0);
     display: flex;
     justify-content: center;
     padding: 0;
+    transition: 150ms;
   
     &__headline {
       padding: 20px;
@@ -126,15 +127,12 @@ $backgroundWhite: #f7ede2;
       // visibility: hidden;
     }
   }
-  // .great.show{
-  //  transform: translateX(-100px);
-  //   opacity: 0;
-  // }
+ 
 
-  // .great.lazy{
-  // transform: translateX(100px);
-  //   opacity: 1;
-  // }
+  .great.show{
+  transform: translateX(-20px);
+    opacity: 1;
+  }
 
  
   .text {
