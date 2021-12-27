@@ -109,7 +109,7 @@ $backgroundWhite: #f7ede2;
     justify-content: center;
     padding: 0;
     transition: 150ms;
-  
+
     &__headline {
       padding: 20px;
       font-style: normal;
@@ -127,14 +127,13 @@ $backgroundWhite: #f7ede2;
       // visibility: hidden;
     }
   }
- 
 
-  .great.show{
-  transform: translateX(-20px);
+  .great.show {
+  //transform: translateX(100px);
     opacity: 1;
+    transition: 150ms;
   }
 
- 
   .text {
     display: flex;
     background-image: url(../imgsSmall/golddiamond.svg);
@@ -502,25 +501,25 @@ $backgroundWhite: #f7ede2;
       color: $darkBlue;
       text-decoration-line: underline;
       letter-spacing: 0.035em;
-      margin-top:5%;
+      margin-top: 5%;
     }
-    &__check{
-    width: 30%;
-    padding: 14px;
-    align-self: center;
-    margin-top:2%;
-     //position: relative;
-    //left: 17%;
-    background-color: $yellow;
-    color: $darkBlue;
-    font-weight: 600;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
+    &__check {
+      width: 30%;
+      padding: 14px;
+      align-self: center;
+      margin-top: 2%;
+      //position: relative;
+      //left: 17%;
+      background-color: $yellow;
+      color: $darkBlue;
+      font-weight: 600;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
     }
   }
-  
-  .text{
+
+  .text {
     display: flex;
     position: relative;
     //margin-top: %;
