@@ -134,7 +134,7 @@ const callbackparagraphsec = (entries, observer)=>{
 const paragraphSecObserver= new IntersectionObserver(callbackparagraphsec,options);
 paragraphSecObserver.observe(paragraphsec)
 
-const button = document.querySelector('.offers__container--price');
+const buttons = document.querySelectorAll('.offers__container--price');
 //const button = document.getElementsByName('offers');
 
 const callbackbutton = (entries, observer)=>{
@@ -149,10 +149,13 @@ const callbackbutton = (entries, observer)=>{
       //observer.unobserve(entry.target)
     };
     const options={
-      rootMargin: '0px',
+      rootMargin: '20px',
       threshold:0.15
     }
   })
 }
+
 const buttonObserver= new IntersectionObserver(callbackbutton,options);
-buttonObserver.observe(button)
+buttons.forEach(button =>{
+  buttonObserver.observe(button)
+});

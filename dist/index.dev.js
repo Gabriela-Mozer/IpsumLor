@@ -122,7 +122,7 @@ var callbackparagraphsec = function callbackparagraphsec(entries, observer) {
 
 var paragraphSecObserver = new IntersectionObserver(callbackparagraphsec, options);
 paragraphSecObserver.observe(paragraphsec);
-var button = document.querySelector('.offers__container--price'); //const button = document.getElementsByName('offers');
+var buttons = document.querySelectorAll('.offers__container--price'); //const button = document.getElementsByName('offers');
 
 var callbackbutton = function callbackbutton(entries, observer) {
   entries.forEach(function (entry) {
@@ -135,11 +135,13 @@ var callbackbutton = function callbackbutton(entries, observer) {
 
     ;
     var options = {
-      rootMargin: '0px',
+      rootMargin: '20px',
       threshold: 0.15
     };
   });
 };
 
 var buttonObserver = new IntersectionObserver(callbackbutton, options);
-buttonObserver.observe(button);
+buttons.forEach(function (button) {
+  buttonObserver.observe(button);
+});

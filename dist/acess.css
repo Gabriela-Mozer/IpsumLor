@@ -444,6 +444,9 @@
     outline: none;
     border: none;
     cursor: pointer;
+    opacity: 0;
+    transition: transform 5s, opacity 3s;
+    transform: translate(-100px);
   }
 
   .media {
@@ -654,6 +657,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    transition: transform 5s, opacity 3s;
   }
 
   .media {
