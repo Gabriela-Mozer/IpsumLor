@@ -104,11 +104,11 @@ $backgroundWhite: #f7ede2;
   //Main
   .great {
     opacity: 0;
-    transform: translateX(0);
+    transform: translateX(-100px);
     display: flex;
     justify-content: center;
     padding: 0;
-    transition: 150ms;
+    transition: transform 5s, opacity 3s;
 
     &__headline {
       padding: 20px;
@@ -129,9 +129,9 @@ $backgroundWhite: #f7ede2;
   }
 
   .great.show {
-  //transform: translateX(100px);
+    transform: translateX(0px);
     opacity: 1;
-    transition: 150ms;
+    //transition: 150ms;
   }
 
   .text {
@@ -142,6 +142,7 @@ $backgroundWhite: #f7ede2;
     background-position-y: 45%;
     align-self: center;
     justify-content: center;
+
     &__article {
       align-self: center;
       width: 85%;
@@ -152,7 +153,14 @@ $backgroundWhite: #f7ede2;
       line-height: 1.5em;
       letter-spacing: 0.09em;
       padding-bottom: 50px;
+      opacity: 0;
+      transform: translate(-100px);
+      transition: transform 5s, opacity 3s;
     }
+  }
+  .show {
+    opacity: 1;
+    transform: translate(0px);
   }
 
   //Offers
@@ -161,20 +169,29 @@ $backgroundWhite: #f7ede2;
     padding: 13em 0 13em 0;
     clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 81%);
     background-color: $yellow;
+    //opacity: 1;
 
     &__container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      //  border: 1px solid #598278;
-      // border-spacing:10px;
+      // opacity: 1;
+      // transition: transform 5s, opacity 3s;
+      // transform: translate(0px);
+
       &--heading {
         color: $darkBlue;
         padding-top: 35px;
+        opacity: 0;
+        transition: transform 5s, opacity 3s;
+        transform: translate(-100px);
       }
       &--headingFirst {
         color: $darkBlue;
         padding-top: 35px;
+        opacity: 0;
+        transition: transform 5s, opacity 3s;
+        transform: translate(-100px);
       }
 
       &--paragraph {
@@ -184,6 +201,18 @@ $backgroundWhite: #f7ede2;
         width: 35%;
         padding-bottom: 20px;
         font-size: 20px;
+        opacity: 0;
+        transition: transform 5s, opacity 3s;
+        transform: translate(-100px);
+        &--first {
+          color: $darkBlue;
+          font-weight: 600;
+          text-align: center;
+          width: 35%;
+          opacity: 0;
+          transition: transform 5s, opacity 3s;
+          transform: translate(-100px);
+        }
       }
       &--price {
         background: $darkBlue;
@@ -193,10 +222,37 @@ $backgroundWhite: #f7ede2;
         border: none;
         color: $backgroundWhite;
         font-weight: 700;
+        opacity: 0;
+        transition: transform 5s, opacity 3s;
+        transform: translate(-100px);
       }
     }
   }
-
+  .offers__container--heading.show {
+    opacity: 1;
+    transform: translate(0px);
+    transition: transform 2s, opacity 3s;
+  }
+  .offers__container--headingFirst.show {
+    opacity: 1;
+    transform: translate(0px);
+    transition: transform 2s, opacity 3s;
+  }
+  .offers__container--paragraph--first.show {
+    opacity: 1;
+    transform: translate(0px);
+    transition: transform 2s, opacity 3s;
+  }
+  .offers__container--paragraph.show {
+    opacity: 1;
+    transform: translate(0px);
+    transition: transform 2s, opacity 3s;
+  }
+  .offers__container--price.show {
+    opacity: 1;
+    transform: translate(0px);
+    transition: transform 2s, opacity 3s;
+  }
   //Footer
   .media {
     padding: 25px 0;
@@ -296,6 +352,9 @@ $backgroundWhite: #f7ede2;
     // background-position: right;
     background-position-x: 85%;
     background-position-y: 62%;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: transform 5s, opacity 5s;
     &__headline {
       width: 20%;
       letter-spacing: 0.13em;
@@ -325,6 +384,11 @@ $backgroundWhite: #f7ede2;
     border: none;
     cursor: pointer;
   }
+  .great.show {
+    transform: translateX(0px);
+    opacity: 1;
+    //transition: 150ms;
+  }
   .text {
     display: flex;
     position: relative;
@@ -334,6 +398,9 @@ $backgroundWhite: #f7ede2;
     background-color: $lightBlue;
     clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 75%);
     padding: 15em 0 15em 0;
+    //opacity:0;
+    //transform: translate(-100px);
+    // transition:transform 5s, opacity 3s;
     &__article {
       display: flex;
       // width:50%;
@@ -344,7 +411,15 @@ $backgroundWhite: #f7ede2;
       line-height: 1.8em;
       font-weight: 500;
       margin: 12px;
+      opacity: 0;
+      transform: translate(-100px);
+      transition: transform 5s, opacity 3s;
     }
+  }
+  .text__article.show {
+    transform: translateX(0px);
+    opacity: 1;
+    //transition: 150ms;
   }
   .offers {
     padding-top: 120px;
@@ -361,6 +436,12 @@ $backgroundWhite: #f7ede2;
       &--paragraph {
         border: 1.5px solid $lightBlue;
         padding: 40px;
+        &--first {
+          color: $darkBlue;
+          font-weight: 600;
+          padding: 40px;
+          border: 1.5px solid $lightBlue;
+        }
       }
       &--heading {
         color: $darkBlue;
@@ -475,6 +556,9 @@ $backgroundWhite: #f7ede2;
     top: 14%;
   }
   .great {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: transform 3s, opacity 5s;
     display: flex;
     height: 50vh;
     flex-direction: column;
@@ -518,7 +602,11 @@ $backgroundWhite: #f7ede2;
       cursor: pointer;
     }
   }
-
+  .great.show {
+    transform: translateX(0px);
+    opacity: 1;
+    //transition: 150ms;
+  }
   .text {
     display: flex;
     position: relative;
@@ -539,8 +627,16 @@ $backgroundWhite: #f7ede2;
       line-height: 2em;
       font-weight: 500;
       margin: 12px;
+      opacity: 0;
+      transform: translate(-100px);
+      transition: transform 5s, opacity 3s;
     }
   }
+  .show.text__article {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
   .offers {
     //padding-top: 120px;
     margin-top: 40px;
@@ -556,9 +652,19 @@ $backgroundWhite: #f7ede2;
       &--paragraph {
         border: 1.5px solid $lightBlue;
         padding: 90px;
+        &--first {
+          color: $darkBlue;
+          //font-weight: 600;
+          padding: 90px;
+          border: 1.5px solid $lightBlue;
+          //opacity: 0;
+          // transform: translate(-100px);
+        }
       }
       &--heading {
         color: $darkBlue;
+        // opacity: 0;
+        // transform: translate(-100px);
       }
       &--headingFirst {
         color: $darkBlue;
@@ -574,6 +680,8 @@ $backgroundWhite: #f7ede2;
         cursor: pointer;
       }
     }
+  }
+  .offers__container--heading.show {
   }
   .media {
     display: flex;
