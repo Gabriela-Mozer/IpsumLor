@@ -15,6 +15,6 @@
 ##  build
 `npm run build` 
 
-##publish 
+## publish 
 
 `npm run publish`
