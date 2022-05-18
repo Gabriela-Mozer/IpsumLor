@@ -1,4 +1,4 @@
-"# IpsumLor" 
+# IpsumLor 
 
 >Welcome to one of my first projects!
 > I designed It on my own and created with a little help of somebody more intelligent than me. I made this for fun and to learn some front end skills.
