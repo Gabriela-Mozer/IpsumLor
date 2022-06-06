@@ -254,7 +254,7 @@
     display: none;
   }
 }
-@media (min-width: 841px) and (max-width: 1445px) {
+@media (min-width: 841px) and (max-width: 1329px) {
   body {
     background-color: #f7ede2;
   }
