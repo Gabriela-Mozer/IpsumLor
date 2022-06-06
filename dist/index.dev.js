@@ -5,7 +5,8 @@ var main = document.querySelector(".great");
 var callback = function callback(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
-      entry.target.classList.add("show");
+      entry.target.classList.add("show"); //
+
       observer.unobserve(entry.target); //console.log(entries)
     } else {
       entry.target.classList.remove("show"); //observer.unobserve(entry.target);
@@ -14,8 +15,8 @@ var callback = function callback(entries, observer) {
 };
 
 var options = {
-  rootMargin: "20px" //threshold: 0.3,
-
+  rootMargin: "20px",
+  threshold: 0.1
 };
 var myObserver = new IntersectionObserver(callback, options);
 myObserver.observe(main);

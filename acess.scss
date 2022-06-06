@@ -108,7 +108,13 @@ $backgroundWhite: #f7ede2;
     display: flex;
     justify-content: center;
     padding: 0;
+    opacity: 1;
+    transform: translateX(-100px);
     transition: transform 5s, opacity 3s;
+    &--great.show {
+      transform: translateX(0px);
+      opacity: 1;
+    }
 
     &__headline {
       padding: 20px;
@@ -126,12 +132,6 @@ $backgroundWhite: #f7ede2;
       display: none;
       // visibility: hidden;
     }
-  }
-
-  .great.show {
-    transform: translateX(0px);
-    opacity: 1;
-    //transition: 150ms;
   }
 
   .text {
@@ -186,12 +186,20 @@ $backgroundWhite: #f7ede2;
         transition: transform 5s, opacity 3s;
         transform: translate(-100px);
       }
+      &--heading.show {
+        opacity: 1;
+        transform: translate(0px);
+      }
       &--headingFirst {
         color: $darkBlue;
         padding-top: 35px;
         opacity: 0;
         transition: transform 5s, opacity 3s;
         transform: translate(-100px);
+      }
+      &--headingFirst.show {
+        opacity: 1;
+        transform: translate(0px);
       }
 
       &--paragraph {
@@ -228,16 +236,7 @@ $backgroundWhite: #f7ede2;
       }
     }
   }
-  .offers__container--heading.show {
-    opacity: 1;
-    transform: translate(0px);
-    transition: transform 2s, opacity 3s;
-  }
-  .offers__container--headingFirst.show {
-    opacity: 1;
-    transform: translate(0px);
-    transition: transform 2s, opacity 3s;
-  }
+
   .offers__container--paragraph--first.show {
     opacity: 1;
     transform: translate(0px);
@@ -403,7 +402,7 @@ $backgroundWhite: #f7ede2;
     // transition:transform 5s, opacity 3s;
     &__article {
       display: flex;
-      // width:50%;
+      // width:50%;pa
       color: #fff;
       align-content: center;
       text-align: center;
@@ -436,18 +435,49 @@ $backgroundWhite: #f7ede2;
       &--paragraph {
         border: 1.5px solid $lightBlue;
         padding: 40px;
+        opacity: 0;
+        transition: transform 5s, opacity 3s;
+        transform: translate(-100px);
+       
         &--first {
           color: $darkBlue;
           font-weight: 600;
           padding: 40px;
           border: 1.5px solid $lightBlue;
+          opacity: 0;
+          transition: transform 5s, opacity 3s;
+          transform: translate(-100px);
+          
         }
+        &--first.show {
+          opacity: 1;
+          transform: translate(0px);
+        }
+        
+      }
+      &--paragraph.show {
+        opacity: 1;
+        transform: translate(0px);
       }
       &--heading {
         color: $darkBlue;
+        opacity: 0;
+        transition: transform 5s, opacity 3s;
+        transform: translate(-100px);
+      }
+      &--heading.show {
+        opacity: 1;
+        transform: translate(0px);
       }
       &--headingFirst {
         color: $darkBlue;
+        opacity: 0;
+        transition: transform 5s, opacity 3s;
+        transform: translate(-100px);
+      }
+      &--headingFirst.show {
+        opacity: 1;
+        transform: translate(0px);
       }
       &--price {
         color: #fff;
@@ -461,6 +491,11 @@ $backgroundWhite: #f7ede2;
         opacity: 0;
         transition: transform 5s, opacity 3s;
         transform: translate(-100px);
+      }
+      &--price.show {
+        opacity: 1;
+        //: transform 5s, opacity 3s;
+        transform: translate(0px);
       }
     }
   }
@@ -656,22 +691,49 @@ $backgroundWhite: #f7ede2;
       &--paragraph {
         border: 1.5px solid $lightBlue;
         padding: 90px;
+        opacity: 0;
+        transition: transform 5s, opacity 3s;
+        transform: translate(-100px);
+        
         &--first {
           color: $darkBlue;
           //font-weight: 600;
           padding: 90px;
           border: 1.5px solid $lightBlue;
-          //opacity: 0;
-          // transform: translate(-100px);
+          opacity: 0;
+          transition: transform 5s, opacity 3s;
+           transform: translate(-100px);
         }
+        &--first.show{
+          opacity:1;
+          transform: translate(0px);
+        }
+        
+      }
+      &--paragraph.show{
+        opacity:1;
+        transform: translate(0px);opacity:1;
+        transform: translate(0px);
       }
       &--heading {
         color: $darkBlue;
-        // opacity: 0;
-        // transform: translate(-100px);
+        opacity: 0;
+        transition: transform 5s, opacity 3s;
+        transform: translate(-100px);
+      }
+      &--heading.show {
+        opacity: 1;
+        transform: translate(0px);
       }
       &--headingFirst {
         color: $darkBlue;
+        opacity: 0;
+        transition: transform 5s, opacity 3s;
+        transform: translate(-100px);
+      }
+      &--headingFirst.show {
+        opacity: 1;
+        transform: translate(0px);
       }
       &--price {
         color: #fff;
@@ -682,17 +744,17 @@ $backgroundWhite: #f7ede2;
         outline: none;
         border: none;
         cursor: pointer;
-        //opacity: 1;
-        //transform: translate(0px);
+        opacity: 0;
+        transform: translate(-100px);
         transition: transform 5s, opacity 3s;
       }
     }
+    .offers__container--price.show {
+      transform: translateX(0px);
+      opacity: 1;
+    }
   }
-  // .offers__container--price.show {
-  //   transform: translateX(100px);
-  //   opacity: 1;
-  // }
-  
+
   .media {
     display: flex;
     align-items: center;

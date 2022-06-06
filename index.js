@@ -4,6 +4,7 @@ const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
+      //
       observer.unobserve(entry.target);
       //console.log(entries)
     } else {
@@ -14,7 +15,7 @@ const callback = (entries, observer) => {
 };
 const options = {
   rootMargin: "20px",
-  //threshold: 0.3,
+  threshold: 0.1,
 };
 
 const myObserver = new IntersectionObserver(callback, options);
