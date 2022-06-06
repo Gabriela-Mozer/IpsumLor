@@ -44,10 +44,9 @@ var offersheading = document.querySelector('.offers__container--heading');
 var calloffer = function calloffer(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
-      entry.target.classList.add('show'); // observer.unobserve(entry.target)
-      // console.log(entry.target)
+      entry.target.classList.add('show');
     } else {
-      entry.target.classList.remove('show'); //observer.unobserve(entry.target)
+      entry.target.classList.remove('show');
     }
 
     ;
@@ -65,10 +64,9 @@ var offersheadingrich = document.querySelector('.offers__container--headingFirst
 var callofferrich = function callofferrich(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
-      entry.target.classList.add('show'); // observer.unobserve(entry.target)
-      // console.log(entry.target)
+      entry.target.classList.add('show');
     } else {
-      entry.target.classList.remove('show'); //observer.unobserve(entry.target)
+      entry.target.classList.remove('show');
     }
 
     ;

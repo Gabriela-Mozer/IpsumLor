@@ -48,12 +48,11 @@ const calloffer = (entries, observer)=>{
   entries.forEach(entry =>{
     if(entry.isIntersecting){
       entry.target.classList.add('show')
-     // observer.unobserve(entry.target)
-     // console.log(entry.target)
+     
     }
     else{
       entry.target.classList.remove('show')
-      //observer.unobserve(entry.target)
+      
     };
     const options={
       rootMargin: '0px',
@@ -72,12 +71,11 @@ const callofferrich = (entries, observer)=>{
   entries.forEach(entry =>{
     if(entry.isIntersecting){
       entry.target.classList.add('show')
-     // observer.unobserve(entry.target)
-     // console.log(entry.target)
+   
     }
     else{
       entry.target.classList.remove('show')
-      //observer.unobserve(entry.target)
+      
     };
     const options={
       rootMargin: '0px',
